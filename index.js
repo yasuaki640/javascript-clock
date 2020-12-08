@@ -1,9 +1,16 @@
 function showTime() {
-    let date = new Date();
-    let timestamp = date.getTime();
+    let startDate = new Date();
+    let nowTimestamp = startDate.getTime();
+    let hour, min, sec;
+
     setInterval(() => {
-            timestamp = timestamp + 1000;
-            document.getElementById("ClockArea").innerText = timestamp;
+            nowTimestamp += 1000;
+            let nowDate = new Date(nowTimestamp);
+            hour = nowDate.getHours();
+            min = nowDate.getMinutes();
+            sec = nowDate.getSeconds();
+
+            document.getElementById("ClockArea").innerText = `${hour}:${min}:${sec}`;
         }
         , 1000);
 }
