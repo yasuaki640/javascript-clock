@@ -20,7 +20,7 @@ function showTime() {
             min = nowDate.getMinutes().toString().padStart(2, "0");
             sec = nowDate.getSeconds().toString().padStart(2, "0");
 
-            document.getElementById("ClockArea").innerText = `${hour}:${min}:${sec}`;
+            document.getElementById("ClockArea").innerText = `${hour}:${min}:${sec} ${session}`;
         }
         , 1000);
 }
