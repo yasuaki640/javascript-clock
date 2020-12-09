@@ -1,11 +1,12 @@
 function showTime() {
     let startDate = new Date();
+    let nowDate
     let nowTimestamp = startDate.getTime();
     let hour, min, sec, session;
 
     setInterval(() => {
             nowTimestamp += 1000;
-            let nowDate = new Date(nowTimestamp);
+            nowDate = new Date(nowTimestamp);
 
             hour = nowDate.getHours();
             session = (hour > 12) ? "PM" : "AM";
