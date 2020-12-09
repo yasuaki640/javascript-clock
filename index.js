@@ -6,9 +6,9 @@ function showTime() {
     setInterval(() => {
             nowTimestamp += 1000;
             let nowDate = new Date(nowTimestamp);
-            hour = nowDate.getHours();
-            min = nowDate.getMinutes();
-            sec = nowDate.getSeconds();
+            hour = nowDate.getHours().toString().padStart(2, "0");
+            min = nowDate.getMinutes().toString().padStart(2, "0");
+            sec = nowDate.getSeconds().toString().padStart(2, "0");
 
             document.getElementById("ClockArea").innerText = `${hour}:${min}:${sec}`;
         }
