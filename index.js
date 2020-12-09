@@ -1,6 +1,6 @@
 function showTime() {
     let startDate = new Date();
-    let nowDate
+    let nowDate;
     let nowTimestamp = startDate.getTime();
     let hour, min, sec, session;
 
