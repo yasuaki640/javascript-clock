@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+}
+
+#ClockArea {
+    font-size: 10vw;
+    font-family: Century, serif;
+    color: azure;
+    text-shadow: 0 0 10px azure, 0 0 15px azure;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
