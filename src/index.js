@@ -9,7 +9,7 @@ function showTime() {
             nowDate = new Date(nowTimestamp);
 
             hour = nowDate.getHours();
-            session = (hour > 12) ? "PM" : "AM";
+            session = (hour < 12) ? "AM" : "PM";
 
             if (hour > 12) {
                 hour -= 12;
