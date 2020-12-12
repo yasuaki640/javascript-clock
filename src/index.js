@@ -14,7 +14,7 @@ function showTime() {
             if (hour > 12) {
                 hour -= 12;
             } else if (hour === 0) {
-                hour = 12
+                hour = 12;
             }
 
             hour = hour.toString().padStart(2, "0");
